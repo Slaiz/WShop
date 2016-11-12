@@ -11,6 +11,9 @@ using Domain.Model;
 
 namespace WebUI.DI
 {
+    /// <summary>
+    /// Class for DI-container
+    /// </summary>
     public class NinjectDependencyResolver : IDependencyResolver
     {
         private IKernel _kernel;

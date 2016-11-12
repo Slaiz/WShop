@@ -7,6 +7,9 @@ using System.Web.Mvc;
 
 namespace WebUI.DI
 {
+    /// <summary>
+    /// Class for bind model
+    /// </summary>
     public class CartModelBinder:IModelBinder
     {
         private const string sessionKey = "Cart";

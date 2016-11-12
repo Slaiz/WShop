@@ -7,6 +7,9 @@ using System.Web.Mvc;
 
 namespace WebUI.Controllers
 {
+    /// <summary>
+    /// Сontroller renders navigation menu
+    /// </summary>
     public class NavController : Controller
     {
         private IGameRepository _repository;

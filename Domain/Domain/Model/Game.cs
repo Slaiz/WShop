@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Model
 {
+    /// <summary>
+    /// Model of DB
+    /// </summary>
     public class Game
     {
         public int GameId { get; set; }

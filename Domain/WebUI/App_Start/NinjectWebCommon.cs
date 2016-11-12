@@ -12,6 +12,10 @@ namespace WebUI.App_Start
     using Ninject.Web.Common;
     using System.Web.Mvc;
 
+    /// <summary>
+    /// Ñlass that serves as the gateway between the NinjectDependencyResolver and Di
+    /// </summary>
+
     public static class NinjectWebCommon 
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
@@ -56,10 +60,6 @@ namespace WebUI.App_Start
             }
         }
 
-        /// <summary>
-        /// Load your modules or register your services here!
-        /// </summary>
-        /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
             System.Web.Mvc.DependencyResolver.SetResolver(new WebUI.DI.NinjectDependencyResolver(kernel));

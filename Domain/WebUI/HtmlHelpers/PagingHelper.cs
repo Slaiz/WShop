@@ -8,9 +8,12 @@ using WebUI.Models;
 
 namespace WebUI.HtmlHelpers
 {
+    /// <summary>
+    /// Html-helper for page
+    /// </summary>
     public static class PagingHelper
     {
-       public static MvcHtmlString PageLinks(this HtmlHelper html, PagingInfo pagingInfo, Func<int, string> pageUrl)
+       public static MvcHtmlString PageLinks(this HtmlHelper html, PagingInfo pagingInfo, Func<int, string> pageUrl) //method generates Html-markup to set references on the page
         {
             StringBuilder result = new StringBuilder();
 

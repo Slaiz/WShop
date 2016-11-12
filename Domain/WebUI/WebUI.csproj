@@ -176,6 +176,7 @@
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="File.txt" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\GameSummary.cshtml" />
     <Content Include="Views\Nav\Menu.cshtml" />
@@ -198,6 +199,7 @@
     <Compile Include="Models\CartIndexViewModel.cs" />
     <Compile Include="Models\GamesListViewModel.cs" />
     <Compile Include="Models\PagingInfo.cs" />
+    <Compile Include="Modules\FileModule.cs" />
     <Compile Include="Modules\TimerModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

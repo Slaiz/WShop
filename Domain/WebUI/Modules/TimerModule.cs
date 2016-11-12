@@ -6,6 +6,9 @@ using System.Web;
 
 namespace WebUI.Modules
 {
+    /// <summary>
+    /// Module that shows the time of the query
+    /// </summary>
     public class TimerModule:IHttpModule
     {
         private Stopwatch timer;

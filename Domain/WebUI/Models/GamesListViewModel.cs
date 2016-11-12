@@ -1,11 +1,11 @@
 ﻿using Domain.Model;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace WebUI.Models
 {
+    /// <summary>
+    /// Class model representation
+    /// </summary>
     public class GamesListViewModel
     {
         public IEnumerable<Game> Games { get; set; }

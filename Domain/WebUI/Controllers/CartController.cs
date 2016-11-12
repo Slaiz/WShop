@@ -9,6 +9,9 @@ using WebUI.Models;
 
 namespace WebUI.Controllers
 {
+    /// <summary>
+    /// Controller for cart
+    /// </summary>
     public class CartController : Controller
     {
         private IGameRepository _repository;

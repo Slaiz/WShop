@@ -5,12 +5,15 @@ using System.Web;
 
 namespace WebUI.Models
 {
+    /// <summary>
+    /// Class that represent information about page
+    /// </summary>
     public class PagingInfo
     {
-        public int TotalItems { get; set; }     
-        public int ItemsPerPage { get; set; }   
-        public int CurrentPage { get; set; }    
-        public int TotalPages                  
+        public int TotalItems { get; set; }     //The total number of items
+        public int ItemsPerPage { get; set; }   //Count item on page
+        public int CurrentPage { get; set; }    //Number current page
+        public int TotalPages                   //Count all pages
         {
             get { return (int)Math.Ceiling((decimal)TotalItems / ItemsPerPage); }
         }
