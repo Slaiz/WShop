@@ -1,0 +1,29 @@
+CREATE TABLE [dbo].[Games] (
+    [GameId]       INT        IDENTITY (1, 1) NOT NULL,
+    [Name]         VARCHAR (50)  NOT NULL,
+    [Publisher]    VARCHAR (50)  NOT NULL,
+    [MainPlatform] VARCHAR (50)  NOT NULL,
+    [Genre]        VARCHAR (50)  NOT NULL,
+    [Price]        DECIMAL(16, 2) NOT NULL,
+    [Description]  VARCHAR (250) NOT NULL,
+    PRIMARY KEY CLUSTERED ([GameId] ASC)
+);
+
+(LocalDB)\MSSQLLocalDB
+
+INSERT INTO Games(Name, Publisher, MainPlatform, Genre, Price, Description)
+VALUES ('Tomb Raider', 'Square Enix', 'PC', 'ActionRPG', 15, 'Tomb Raider explores the intense origin story of Lara Croft and her ascent from a young woman to a hardened survivor.'),
+	   ('Far Cry Primal', 'Ubisoft', 'PS4', 'ActionRPG', 30, 'The award-winning Far Cry franchise returns with its innovative open world gameplay, bringing together massive beasts, breathtaking environments, and unpredictable savage encounters. Welcome to the Stone Age, a time of danger and adventure.'),
+	   ('StarCraft 2', 'Blizzard Entertainment', 'PC', 'Strategy', 20, ' Strategy in space'),
+	   ('Need for Speed', 'EA', 'PS4', 'Race', 15, 'Need for Speed is an award-winning authentic racing game that combines the true driver’s experience with real-world physics, pixel-perfect car models, and a wide range of authentic race tracks.'),
+	   ('Mafia 3', '2K', 'PS4', 'Shooter', 32, 'It’s 1968 and after years of combat in Vietnam, Lincoln Clay knows this truth: family isn’t who you’re born with, it’s who you die for.'),
+	   ('DOOM', 'id_Software', 'PC', 'Shooter', 35, 'DOOM returns as a brutally fun and challenging modern-day shooter experience. Relentless demons, impossibly destructive guns, and fast, fluid movement provide the foundation for intense, first-person combat.'),
+	   ('Warcraft 3', 'Blizzard Entertainment', 'PC', 'Strategy', 20, 'Epic Strategy with orcs and elfs)'),
+	   ('Far Cry 3', 'Ubisoft', 'PC', 'ActionRPG', 25, 'Discover the dark secrets of a lawless island ruled by violence and take the fight to the enemy as you try to escape. You need more than luck to escape alive!')
+                 
+  <connectionStrings>
+    <add name="EFDbContext" connectionString="Data Source= (LocalDB)\MSSQLLocalDB; Initial Catalog=GameShop; Integrated Security=True" 
+         providerName="System.Data.SqlClient" />
+  </connectionStrings>
+
+
